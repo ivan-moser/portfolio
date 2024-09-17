@@ -111,6 +111,10 @@ main {
     margin-bottom: 70px;
 }
 
+#experiences {
+    padding: 10px;
+}
+
 .group-list {
     display: inline-flex;
     flex-direction: column;
@@ -132,9 +136,17 @@ main {
     justify-content: space-between;
     align-items: flex-start;
     gap: 40px;
+    border-radius: 10px;
+    padding: 10px;
     width: 100%;
     flex-wrap: nowrap;
     height: auto;
+    box-sizing: border-box;
+}
+
+.experience-container:hover {
+    background-color: rgba(28, 42, 75, 0.3);
+    cursor: pointer;
 }
 
 .experience-container p {
