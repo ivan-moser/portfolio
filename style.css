@@ -73,12 +73,21 @@ b {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color: rgba(255, 255, 255, 0.9);
     list-style-type: none;
     padding: 0;
     font-size: 0.6rem;
     font-weight: 700;
     letter-spacing: 2px;
+}
+
+.non-active-page {
+    color: rgba(255, 255, 255, 0.6);
+}
+.non-active-page:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+.active-page {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -98,7 +107,10 @@ b {
 .icons {
     width: 25px;
     opacity: 0.8;
+}
 
+.icons:hover {
+    opacity: 1;
 }
 
 /* RIGHT SIDE COLUMN */
@@ -193,6 +205,11 @@ main {
     border-radius: 20px;
 }
 
+/* FOOTER */
+
+footer p {
+    font-size: 0.7rem;
+}
 
 /* WEB PAGE */
 
