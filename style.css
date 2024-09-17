@@ -209,6 +209,10 @@ main {
 
 /* PROJECTS */
 
+#projects {
+    margin-top: 100px;
+}
+
 .left-side img {
     margin-top: 5px;
     width: 90px;
