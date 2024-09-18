@@ -298,6 +298,8 @@ footer p {
 
 .content-center {
     width: 50%;
+    min-width: 900px;
+    margin: 0 auto;
 }
 
 .contents {
@@ -353,6 +355,7 @@ main {
         flex-direction: column;
         gap: 10px;
         width: 100%;
+        padding: 0;
     }
 
     .left-side img {
