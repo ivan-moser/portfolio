@@ -356,11 +356,12 @@ main {
     }
 
     .left-side img {
-        width: 200px;
+        width: 250px;
     }
 
     .experience-content {
         width: 100%;
+        max-width: fit-content;
         box-sizing: border-box;
     }
 
@@ -392,8 +393,16 @@ main {
         font-size: 1.2rem;
     }
 
+    #about {
+        margin: 0;
+    }
+
     .mobile-title {
         margin-top: 30px;
+    }
+
+    .sections-title {
+        margin: 70px 0;
     }
 
 
