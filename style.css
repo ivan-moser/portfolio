@@ -17,7 +17,7 @@ body, html {
     padding: 0;
     line-height: 1.5;
     position: absolute;
-    
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -48,6 +48,7 @@ a {
 
 b {
     color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
 }
 
 /* LEFT SIDE COLUMN */
@@ -189,7 +190,7 @@ main {
     justify-content: space-between;
     align-items: flex-start;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
     gap: 30px;
     flex-wrap: nowrap;
@@ -292,17 +293,17 @@ footer p {
 
 .sections-title {
     margin: 75px 0;
-    
+    color: rgba(255, 255, 255, 0.8)
 }
 
 .content-center {
-    width: 85%;
+    width: 50%;
 }
 
 .contents {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     gap: 25px;
 }
 
@@ -316,4 +317,105 @@ main {
     width: 100%;
     margin-top: 7%;
     overflow-y: auto;
+}
+
+
+
+/* PER MOBILE */
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .content-center {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .contents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .content-center {
+        width: 80%;
+    }
+
+    .experience-container {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .left-side img {
+        width: 200px;
+    }
+
+    .experience-content {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+  
+    #socials {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        padding-left: 10px;
+    }
+
+
+    .icons {
+        width: 30px;
+        opacity: 1;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .mobile-title {
+        margin-top: 30px;
+    }
+
+
+    .experience-container {
+        padding: 10px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    #navigation {
+        height: fit-content;
+        margin-top: 30px;
+    }
+    header {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .nav-block-1, #socials {
+        align-items: flex-start;
+        text-align: left;
+    }
 }

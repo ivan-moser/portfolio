@@ -3,7 +3,7 @@ let mouseY = 0;
 let gradientX = 0;
 let gradientY = 0;
 
-const speed = 0.5;
+const speed = 0.3;
 const animatedBg = document.getElementById('animated-bg');
 
 document.addEventListener('mousemove', function(event) {
