@@ -55,19 +55,16 @@ b {
 
 
 
-#menu li {
-    position: relative;
-}
-
 #menu a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.7rem;
     font-weight: 600;
-    padding-bottom: 5px;
-    transition: color 0.3s ease;
+    padding-bottom: 3px;
     position: relative;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
+
 
 #menu a::before {
     content: "";
@@ -79,6 +76,16 @@ b {
     background-color: white;
     transition: width 0.3s ease;
 }
+
+
+#menu a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#menu a:hover::before {
+    width: 100%;
+}
+
 
 #menu a.active-page {
     color: rgba(255, 255, 255, 0.9);
