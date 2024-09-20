@@ -324,10 +324,6 @@ main {
 /* PER MOBILE */
 
 @media (max-width: 768px) {
-    body {
-        /* Rimosso width e margin, se non necessari */
-        
-    }
 
     .content-center {
         width: 90%;
@@ -342,14 +338,14 @@ main {
     .contents {
         flex-direction: column;
         align-items: center;
-        gap: 15px; /* Aggiunto gap per migliorare lo spazio */
+        gap: 15px;
     }
 
     .experience-container {
         flex-direction: column;
         gap: 10px;
         width: 100%;
-        padding: 10px; /* Uniformato il padding */
+        padding: 10px;
     }
 
     .left-side img {
@@ -364,8 +360,8 @@ main {
     }
 
     #socials {
-        justify-content: center; /* Centrato per migliorare l'allineamento */
-        padding-left: 0; /* Rimosso padding per evitare spazi eccessivi */
+        justify-content: left;
+        padding-left: 0;
     }
 
     .icons {
@@ -380,7 +376,7 @@ main {
     }
 
     h1 {
-        font-size: 2.5rem; /* Ridotto per adattarsi meglio */
+        font-size: 2.5rem;
     }
 
     h2 {
@@ -414,3 +410,14 @@ main {
         text-align: left;
     }
 }
+
+/* PER TABLET */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .content-center {
+        width: 80%;
+    }
+
+}
+
